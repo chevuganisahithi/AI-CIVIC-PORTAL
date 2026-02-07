@@ -1,0 +1,63 @@
+# System Design
+
+## Overview
+The Responsible India Platform is a centralized website that allows citizens to report public safety and civic responsibility issues in a simple and transparent way. The platform supports reporting from both CCTV-covered areas and non-CCTV areas and is designed to expand gradually by adding new problem categories one by one.
+
+---
+
+## User Roles
+- **Citizen/User**: Reports issues and follows public safety initiatives
+- **Admin/Authority**: Reviews submissions and takes action
+- **System (AI – Future Scope)**: Validates and prioritizes reports
+
+---
+
+## System Flow
+1. User visits the website
+2. User views active initiatives (starting with helmet safety)
+3. User submits a report by uploading:
+   - Photo (optional but recommended)
+   - Location
+   - Basic description
+4. User submits the report for review
+5. System stores the submission
+6. Admin reviews the report and takes necessary action
+7. Status updates are recorded for transparency
+
+---
+
+## Reporting Types
+- Issues in areas where CCTV cameras are available
+- Issues in areas where CCTV cameras are not available
+
+---
+
+## Architecture Components
+- **Frontend**: Web interface for users to submit and view reports
+- **Backend**: Server to handle requests and manage data
+- **Database**: Stores user submissions and report details
+- **Admin Panel**: Allows authorities to review and manage reports
+
+---
+
+## AI Integration (Future Scope)
+- Image validation to check relevance of uploaded photos
+- Duplicate report detection
+- Priority scoring based on severity and frequency
+- Support for gradual addition of new problem categories
+
+---
+
+## Expansion Plan
+- Phase 1: Helmet safety
+- Phase 2: Cleanliness issues
+- Phase 3: Civic responsibility problems
+- Additional public issues will be added step by step
+
+---
+
+## Design Goals
+- Simple and user-friendly
+- Transparent reporting process
+- Scalable for future expansion
+- Encourages responsible citizen participation
